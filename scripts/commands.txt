@@ -1,0 +1,28 @@
+grep -i james user.txt
+
+if james is present in user.txt
+then the process will return exit status 0
+
+if no then exit status will be any other integer value other than 0
+
+grep -i $name user.txt &> /dev/null
+
+&> -> nothing will be shown on the screen 
+
+grep -i "@" user.txt
+
+Name : Deependu, Surname : Pandit, Mobile : 9211120210, City : New Delhi, Email : deependu@gmail.com
+Name : Test1, Surname : Surname1, Mobile : 9911881100, City : Delhi, Email : emailId@gmail.com
+Name : test2, Surname : test2, Mobile : 9911882299, City : testCity, Email : test@gmail.com
+
+duck@notsoocoool:~/os/scripts/userForm$ grep -i "*" user.txt
+-> here "*" string was not present in the user.txt therefore $? returned 1
+
+duck@notsoocoool:~/os/scripts/userForm$ echo $?
+1
+
+
+
+
+tput cols -> number of columns in the terminal
+tpur rows -> number of rows in the terminal
